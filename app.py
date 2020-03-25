@@ -1,12 +1,17 @@
 from chalice import Chalice
+import random
 
 app = Chalice(app_name='ForeSeeApi')
 
 
 @app.route('/')
 def index():
-    return {'hello': 'world'}
-
+    i = random.randint(0, 1)
+    if i == 1:
+        return {'status': 'OK', 'message': 'My name is Charon, I carry information through the internet river.'}
+    else:
+        return {'status': 'OK',
+                'message': 'Do you know the Trainman from Matrix? He is my uncle.'}
 
 # The view function above will return {"hello": "world"}
 # whenever you make an HTTP GET request to '/'.
