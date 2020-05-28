@@ -22,5 +22,5 @@ db_endpoint = <YOUR_DB_ENDPOUNT>
 4. `cd` into `ENGG4930C-ForeSee-api` and run `chalice deploy`
 5. Copy the output URL, your API will be serving there.
 
-
-![image of output URL](https://github.com/sight-hkust/ENGG4930C-ForeSee-api/blob/master/github-src/output_url.png )
+<img src="https://github.com/sight-hkust/ENGG4930C-ForeSee-api/blob/master/github-src/output_url.png" 
+alt="API output URL" width="500" height="100" border="10" />
