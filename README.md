@@ -10,7 +10,7 @@ It is written to be deployed to [AWS Lambda](https://aws.amazon.com/lambda/) usi
 # Getting Started
 1. Create an AWS account
 2. Follow the steps on Chalice [Quickstart](https://github.com/aws/chalice#credentials) and [Credentials](https://github.com/aws/chalice#credentials)
-3. `cd` into `ENGG4930C-ForeSee-api/chalicelib` and create a file named `rdsconfig.py` with the following format. Look at [ENGG4930C-ForeSee-database](https://github.com/DoguD/ENGG4930C-ForeSee-database) for further reference.
+3. `cd` into `ENGG4930C-ForeSee-api/chalicelib` and create a file named `rdsconfig.py` with the following format. Look at [ENGG4930C-ForeSee-database](https://github.com/sight-hkust/ENGG4930C-ForeSee-database) for further reference.
 ```python
 db_username = <YOUR_DB_USERNAME>
 db_password = <YOUR_DB_PASSWORD>
@@ -23,4 +23,4 @@ db_endpoint = <YOUR_DB_ENDPOUNT>
 5. Copy the output URL, your API will be serving there.
 
 
-![image of output URL](https://github.com/DoguD/ENGG4930C-ForeSee-api/blob/master/github-src/output_url.png )
+![image of output URL](https://github.com/sight-hkust/ENGG4930C-ForeSee-api/blob/master/github-src/output_url.png )
