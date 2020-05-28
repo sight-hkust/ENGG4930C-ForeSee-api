@@ -1,2 +1,6 @@
 .chalice/deployments/
 .chalice/venv/
+chalicelib/rdsconfig.py
+.idea
+*.pyc
+.DS_Store
