@@ -40,11 +40,11 @@ def create_user():
     parsed = app.current_request.json_body
     email = parsed['email']
     password = parsed['password']
-    birthday = parsed['birthday']
+    #birthday = parsed['birthday']
     real_name = parsed['real_name']
     phone_number = parsed['phone_number']
     is_parent = parsed['is_parent']
-    user = rds.register_new_user(email, password, real_name, birthday, phone_number, is_parent)
+    user = rds.register_new_user(email, password, real_name, phone_number, is_parent)
     return {'status': 'OK', 'user': user}
 
 

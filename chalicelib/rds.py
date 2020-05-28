@@ -46,9 +46,9 @@ def query_handler(query, variables=()):
         raise err
 
 
-def register_new_user(email, password, real_name='', birthday='', phone_number='', is_parent='0'):
-    result = query_handler("""INSERT INTO fs__users (email, password, real_name, birthday, phone_number, is_parent) values("%s", "%s", "%s", "%s", "%s", %s)""",
-                  (email, password, real_name, birthday, phone_number, is_parent))
+def register_new_user(email, password, real_name='', phone_number='', is_parent='0'):
+    result = query_handler("""INSERT INTO fs__users (email, password, real_name, phone_number, is_parent) values("%s", "%s", "%s", "%s", %s)""",
+                  (email, password, real_name, phone_number, is_parent))
     return result
 
 
